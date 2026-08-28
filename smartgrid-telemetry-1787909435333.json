@@ -1,0 +1,952 @@
+{
+  "exportedAt": "2026-08-28T09:30:35.332Z",
+  "settings": {
+    "gridStandard": "50Hz",
+    "telemetryIntervalMs": 1000,
+    "isStreamActive": true,
+    "streamSpeed": 2,
+    "autoAcknowledgeLowPriority": false,
+    "tempAlertThreshold": 80,
+    "overloadThresholdPercent": 100,
+    "voltageDropThresholdPercent": 6,
+    "soundAlertsEnabled": false
+  },
+  "optimization": {
+    "solarCapacityMW": 250,
+    "solarDispatchPercent": 61,
+    "windCapacityMW": 180,
+    "windDispatchPercent": 55,
+    "bessCapacityMWh": 400,
+    "bessStateOfChargePercent": 76,
+    "bessMode": "Auto Peak Shaving",
+    "bessTargetPowerMW": 45,
+    "autoBalancingEnabled": true,
+    "lossMinimizationWeight": 0.85
+  },
+  "substations": [
+    {
+      "id": "SS-1042",
+      "name": "East River",
+      "zone": "North Grid",
+      "load": 120.6,
+      "capacity": 100,
+      "voltage": 10.97,
+      "nominalVoltage": 12,
+      "temperature": 91.3,
+      "frequency": 49.96,
+      "powerFactor": 0.93,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "FORCED_ON",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.7589,
+        "lng": -73.9851
+      }
+    },
+    {
+      "id": "SS-1028",
+      "name": "Industrial Park",
+      "zone": "Central Grid",
+      "load": 109.7,
+      "capacity": 100,
+      "voltage": 11.16,
+      "nominalVoltage": 12,
+      "temperature": 87,
+      "frequency": 49.97,
+      "powerFactor": 0.95,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "AUTO",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.7484,
+        "lng": -73.9857
+      }
+    },
+    {
+      "id": "SS-1011",
+      "name": "Riverside",
+      "zone": "West Grid",
+      "load": 86.2,
+      "capacity": 100,
+      "voltage": 11.45,
+      "nominalVoltage": 12,
+      "temperature": 69.9,
+      "frequency": 50,
+      "powerFactor": 0.98,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "AUTO",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.7829,
+        "lng": -73.9654
+      }
+    },
+    {
+      "id": "SS-1033",
+      "name": "Lakeside",
+      "zone": "South Grid",
+      "load": 61.6,
+      "capacity": 100,
+      "voltage": 11.71,
+      "nominalVoltage": 12,
+      "temperature": 53.3,
+      "frequency": 49.99,
+      "powerFactor": 0.99,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "AUTO",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.7061,
+        "lng": -74.0092
+      }
+    },
+    {
+      "id": "SS-1007",
+      "name": "Hillview",
+      "zone": "North Grid",
+      "load": 85.2,
+      "capacity": 100,
+      "voltage": 11.47,
+      "nominalVoltage": 12,
+      "temperature": 68.9,
+      "frequency": 50.01,
+      "powerFactor": 0.97,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "AUTO",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.7934,
+        "lng": -73.9482
+      }
+    },
+    {
+      "id": "SS-1055",
+      "name": "Pine Valley",
+      "zone": "South Grid",
+      "load": 68.3,
+      "capacity": 80,
+      "voltage": 11.46,
+      "nominalVoltage": 12,
+      "temperature": 70.4,
+      "frequency": 50.01,
+      "powerFactor": 0.96,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "AUTO",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.6892,
+        "lng": -74.0445
+      }
+    },
+    {
+      "id": "SS-1064",
+      "name": "Harbour Port",
+      "zone": "East Grid",
+      "load": 104.6,
+      "capacity": 120,
+      "voltage": 11.4,
+      "nominalVoltage": 12,
+      "temperature": 70.1,
+      "frequency": 49.99,
+      "powerFactor": 0.94,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "AUTO",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -73.9262
+      }
+    },
+    {
+      "id": "SS-1080",
+      "name": "Metro Central",
+      "zone": "Central Grid",
+      "load": 138.1,
+      "capacity": 150,
+      "voltage": 11.42,
+      "nominalVoltage": 12,
+      "temperature": 72.9,
+      "frequency": 50.01,
+      "powerFactor": 0.97,
+      "breakerStatus": "CLOSED",
+      "coolingStatus": "AUTO",
+      "updatedAt": 1787909435236,
+      "coordinates": {
+        "lat": 40.7549,
+        "lng": -73.984
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alt-auto-overload-SS-1028-1787909212231",
+      "stationId": "SS-1028",
+      "stationName": "Industrial Park",
+      "title": "Overload warning on Industrial Park",
+      "detail": "Demand reached 105.6 MW (106% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787909212231,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 6 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-temp-SS-1028-1787908975565",
+      "stationId": "SS-1028",
+      "stationName": "Industrial Park",
+      "title": "High thermal alert on Industrial Park",
+      "detail": "Transformer oil temperature crossed threshold (80°C >= 80°C)",
+      "severity": "critical",
+      "category": "Thermal",
+      "timestamp": 1787908975565,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Activate auxiliary cooling or shed load"
+    },
+    {
+      "id": "alt-auto-temp-SS-1042-1787908647521",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "High thermal alert on East River",
+      "detail": "Transformer oil temperature crossed threshold (80°C >= 80°C)",
+      "severity": "critical",
+      "category": "Thermal",
+      "timestamp": 1787908647521,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Activate auxiliary cooling or shed load"
+    },
+    {
+      "id": "alt-auto-temp-SS-1042-1787908647018",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "High thermal alert on East River",
+      "detail": "Transformer oil temperature crossed threshold (80°C >= 80°C)",
+      "severity": "critical",
+      "category": "Thermal",
+      "timestamp": 1787908647018,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Activate auxiliary cooling or shed load"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908625710",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.3 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908625710,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908624709",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.2 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908624709,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908624709",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908624709,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908618710",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908618710,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908618710",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.3 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908618710,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908617211",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.4 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908617211,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908616211",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.2 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908616211,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908612710",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908612710,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-auto-overload-SS-1042-1787908610209",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908610209,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 5 MW to adjacent feeder"
+    },
+    {
+      "id": "alt-overload-1",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "East River substation overloaded",
+      "detail": "Load at 105% (105 MW) exceeds 100 MW rated continuous transformer capacity",
+      "severity": "critical",
+      "category": "Overload",
+      "timestamp": 1787908482433,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Transfer 10 MW to Lakeside or Hillview substation"
+    },
+    {
+      "id": "alt-temp-1",
+      "stationId": "SS-1028",
+      "stationName": "Industrial Park",
+      "title": "Transformer temperature elevated",
+      "detail": "Industrial Park top-oil temperature at 74°C with continuous thermal rise",
+      "severity": "warning",
+      "category": "Thermal",
+      "timestamp": 1787907522433,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Activate auxiliary cooling stage 2"
+    },
+    {
+      "id": "alt-pred-1",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "title": "Predicted peak overload risk",
+      "detail": "Machine learning model projects 114 MW peak demand within 30 minutes",
+      "severity": "warning",
+      "category": "Frequency",
+      "timestamp": 1787907042433,
+      "acknowledged": false,
+      "resolved": false,
+      "mitigationAction": "Engage BESS fast discharge mode"
+    },
+    {
+      "id": "alt-voltage-1",
+      "stationId": "SS-1011",
+      "stationName": "Riverside",
+      "title": "Feeder bus voltage fluctuation",
+      "detail": "Bus A voltage drooped to 11.4 kV during feeder switching sequence",
+      "severity": "info",
+      "category": "Voltage",
+      "timestamp": 1787905002433,
+      "acknowledged": true,
+      "resolved": false,
+      "mitigationAction": "Tap changer step +1 applied"
+    }
+  ],
+  "outages": [
+    {
+      "id": "OUT-2041",
+      "stationId": "SS-1042",
+      "stationName": "East River",
+      "zone": "North Grid",
+      "affectedCustomers": 1420,
+      "criticalFacilities": [
+        "St. Jude Memorial Hospital (Aux Generator Online)",
+        "Water Pumping Stn #4"
+      ],
+      "cause": "Underground feeder cable fault near 4th Ave & 22nd St",
+      "status": "Crew Dispatched",
+      "reportedAt": 1787904402433,
+      "estimatedRestoration": 1787912202433,
+      "crewAssigned": "Field Unit Alpha-4 (Lead: M. Vance)",
+      "faultLocation": "Feeder 14B - Junction Box 109"
+    },
+    {
+      "id": "OUT-2039",
+      "stationId": "SS-1011",
+      "stationName": "Riverside",
+      "zone": "West Grid",
+      "affectedCustomers": 310,
+      "criticalFacilities": [
+        "Westside Transit Station"
+      ],
+      "cause": "Tree branch contact on lateral spur line",
+      "status": "Investigating",
+      "reportedAt": 1787906802433,
+      "estimatedRestoration": 1787914002433,
+      "crewAssigned": "Rapid Response Bravo-2",
+      "faultLocation": "Spur 03 - Pole 44"
+    },
+    {
+      "id": "OUT-2030",
+      "stationId": "SS-1033",
+      "stationName": "Lakeside",
+      "zone": "South Grid",
+      "affectedCustomers": 85,
+      "criticalFacilities": [],
+      "cause": "Tripped distribution transformer fuse",
+      "status": "Resolved",
+      "reportedAt": 1787894202433,
+      "estimatedRestoration": 1787901402433,
+      "crewAssigned": "Unit Delta-1",
+      "faultLocation": "Transformer Bay 2"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1787909212231-c753",
+      "type": "alert",
+      "title": "Overload warning on Industrial Park",
+      "detail": "Demand reached 105.6 MW (106% of capacity)",
+      "timestamp": 1787909212231,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908975565-r75u",
+      "type": "alert",
+      "title": "High thermal alert on Industrial Park",
+      "detail": "Transformer oil temperature crossed threshold (80°C >= 80°C)",
+      "timestamp": 1787908975565,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908647521-yj9k",
+      "type": "alert",
+      "title": "High thermal alert on East River",
+      "detail": "Transformer oil temperature crossed threshold (80°C >= 80°C)",
+      "timestamp": 1787908647521,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908647018-nk61",
+      "type": "alert",
+      "title": "High thermal alert on East River",
+      "detail": "Transformer oil temperature crossed threshold (80°C >= 80°C)",
+      "timestamp": 1787908647018,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908625710-oton",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.3 MW (105% of capacity)",
+      "timestamp": 1787908625710,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908624709-38d1",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.2 MW (105% of capacity)",
+      "timestamp": 1787908624709,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908624709-7756",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "timestamp": 1787908624709,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908618710-isp7",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "timestamp": 1787908618710,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908618710-kma3",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.3 MW (105% of capacity)",
+      "timestamp": 1787908618710,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908617212-axyv",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.4 MW (105% of capacity)",
+      "timestamp": 1787908617212,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908616212-slcv",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.2 MW (105% of capacity)",
+      "timestamp": 1787908616212,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908612710-z8d5",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "timestamp": 1787908612710,
+      "color": "red"
+    },
+    {
+      "id": "act-1787908610209-s4vp",
+      "type": "alert",
+      "title": "Overload warning on East River",
+      "detail": "Demand reached 105.1 MW (105% of capacity)",
+      "timestamp": 1787908610209,
+      "color": "red"
+    },
+    {
+      "id": "act-1",
+      "type": "alert",
+      "title": "Alert acknowledged",
+      "detail": "Voltage fluctuation · SS-1011 acknowledged by operator",
+      "timestamp": 1787906802433,
+      "color": "green"
+    },
+    {
+      "id": "act-2",
+      "type": "transfer",
+      "title": "Load transfer completed",
+      "detail": "4 MW safely transferred from SS-1028 to SS-1033 via tie-breaker #3",
+      "timestamp": 1787905002433,
+      "color": "blue"
+    },
+    {
+      "id": "act-3",
+      "type": "system",
+      "title": "Telemetry heartbeat verified",
+      "detail": "All 8 primary substations reporting synchronized SCADA packets",
+      "timestamp": 1787903202433,
+      "color": "teal"
+    },
+    {
+      "id": "act-4",
+      "type": "optimization",
+      "title": "Renewable dispatch ramped up",
+      "detail": "Solar PV injection increased to 124 MW for peak shaving",
+      "timestamp": 1787901402433,
+      "color": "green"
+    }
+  ],
+  "telemetryHistory": [
+    {
+      "timestamp": 1787909426231,
+      "load": 771,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 741,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909426721,
+      "load": 772,
+      "projectedLoad": 795,
+      "frequency": 49.99,
+      "voltage": 11.37,
+      "powerFactor": 0.96,
+      "activePower": 741,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909426722,
+      "load": 772,
+      "projectedLoad": 795,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 741,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909427223,
+      "load": 774,
+      "projectedLoad": 797,
+      "frequency": 49.99,
+      "voltage": 11.35,
+      "powerFactor": 0.96,
+      "activePower": 743,
+      "reactivePower": 217
+    },
+    {
+      "timestamp": 1787909427223,
+      "load": 770,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.36,
+      "powerFactor": 0.96,
+      "activePower": 739,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909427722,
+      "load": 768,
+      "projectedLoad": 792,
+      "frequency": 50,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909427722,
+      "load": 769,
+      "projectedLoad": 793,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909428224,
+      "load": 770,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 739,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909428225,
+      "load": 770,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 739,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909428722,
+      "load": 773,
+      "projectedLoad": 798,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 742,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909428723,
+      "load": 769,
+      "projectedLoad": 794,
+      "frequency": 49.98,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909429222,
+      "load": 771,
+      "projectedLoad": 796,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 740,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909429223,
+      "load": 769,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909429722,
+      "load": 771,
+      "projectedLoad": 797,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 740,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909429722,
+      "load": 768,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 737,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909430224,
+      "load": 768,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 737,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909430224,
+      "load": 767,
+      "projectedLoad": 793,
+      "frequency": 49.99,
+      "voltage": 11.37,
+      "powerFactor": 0.96,
+      "activePower": 736,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909430724,
+      "load": 767,
+      "projectedLoad": 794,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 736,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909430724,
+      "load": 768,
+      "projectedLoad": 795,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909431232,
+      "load": 769,
+      "projectedLoad": 796,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909431232,
+      "load": 768,
+      "projectedLoad": 796,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 737,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909431728,
+      "load": 769,
+      "projectedLoad": 796,
+      "frequency": 49.99,
+      "voltage": 11.37,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909431728,
+      "load": 769,
+      "projectedLoad": 796,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 738,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909432235,
+      "load": 768,
+      "projectedLoad": 796,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 737,
+      "reactivePower": 215
+    },
+    {
+      "timestamp": 1787909432235,
+      "load": 771,
+      "projectedLoad": 799,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 740,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909432723,
+      "load": 772,
+      "projectedLoad": 801,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 741,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909432723,
+      "load": 772,
+      "projectedLoad": 801,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 742,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909433222,
+      "load": 773,
+      "projectedLoad": 802,
+      "frequency": 49.99,
+      "voltage": 11.37,
+      "powerFactor": 0.96,
+      "activePower": 742,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909433222,
+      "load": 774,
+      "projectedLoad": 803,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 743,
+      "reactivePower": 217
+    },
+    {
+      "timestamp": 1787909433722,
+      "load": 774,
+      "projectedLoad": 804,
+      "frequency": 49.98,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 743,
+      "reactivePower": 217
+    },
+    {
+      "timestamp": 1787909433722,
+      "load": 775,
+      "projectedLoad": 804,
+      "frequency": 49.99,
+      "voltage": 11.37,
+      "powerFactor": 0.96,
+      "activePower": 744,
+      "reactivePower": 217
+    },
+    {
+      "timestamp": 1787909434231,
+      "load": 776,
+      "projectedLoad": 806,
+      "frequency": 49.99,
+      "voltage": 11.39,
+      "powerFactor": 0.96,
+      "activePower": 745,
+      "reactivePower": 217
+    },
+    {
+      "timestamp": 1787909434232,
+      "load": 774,
+      "projectedLoad": 805,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 743,
+      "reactivePower": 217
+    },
+    {
+      "timestamp": 1787909434736,
+      "load": 772,
+      "projectedLoad": 803,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 742,
+      "reactivePower": 216
+    },
+    {
+      "timestamp": 1787909434737,
+      "load": 774,
+      "projectedLoad": 805,
+      "frequency": 49.99,
+      "voltage": 11.37,
+      "powerFactor": 0.96,
+      "activePower": 743,
+      "reactivePower": 217
+    },
+    {
+      "timestamp": 1787909435236,
+      "load": 774,
+      "projectedLoad": 805,
+      "frequency": 49.99,
+      "voltage": 11.38,
+      "powerFactor": 0.96,
+      "activePower": 743,
+      "reactivePower": 217
+    }
+  ]
+}
